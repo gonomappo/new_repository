@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px; }
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+p,
+li {
+  margin: 0;
+  padding: 0; }
+
+:root {
+  --footer-height: 40px;
+  --btn-bg-color: #47fcc0;
+  --btn-bg-color-hover: #b946d6;
+  --btn-text-color: #fff; }
+
+.page {
+  background-image: url(./assets/images/1.3.webp);
+  background-size: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+  position: relative; }
+
+.page-content {
+  position: relative;
+  min-height: calc(100vh - var(--footer-height)); }
+
+.page-footer {
+  height: var(--footer-height);
+  text-align: center; }
+
+.message-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 537px; }
+
+.message-block__heading {
+  font-size: 90px;
+  line-height: 103px;
+  color: #000;
+  text-transform: uppercase; }
+
+.message-block__description {
+  margin-top: 62px;
+  font-size: 19px;
+  line-height: 22px;
+  width: 80%;
+  margin: 62px auto 0; }
+
+.message-block_-action-btn {
+  width: 268px;
+  height: 57px;
+  background-color: var(--btn-bg-color);
+  border: 1px solid var(--btn-bg-color);
+  color: var(--btn-text-color);
+  font-size: 23px;
+  line-height: 26px;
+  margin-top: 19px;
+  transition: background-color 0.3s, border-color 0.2s; }
+
+.message-block_-action-btn:hover {
+  --btn-bg-color: var(--btn-bg-color-hover); }
+
+
+/*# sourceMappingURL=landing_1.css.map*/

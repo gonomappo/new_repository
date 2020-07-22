@@ -1,0 +1,16 @@
+.wrapper {
+  background: red; }
+  .wrapper .child {
+    border: 2px aqua; }
+    .wrapper .child a {
+      color: green; }
+  .wrapper-dark {
+    background: brown; }
+  .wrapper.active {
+    color: green; }
+
+.child {
+  border: 1px solid blue; }
+
+
+/*# sourceMappingURL=lesson_5.css.map*/
