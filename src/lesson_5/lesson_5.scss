@@ -1,0 +1,22 @@
+$main-color: red;
+$accent-color: green;
+$main-color-dark: brown;
+.wrapper {
+  background: $main-color;
+  .child {
+    border: 2px aqua;
+    a {
+      color: $accent-color;
+    }
+  }
+  &-dark {
+    background: $main-color-dark;
+  }
+  &.active {
+    color: $accent-color;
+  }
+}
+
+.child {
+  border: 1px solid blue;
+}

@@ -1,0 +1,31 @@
+@import "../common/styles/variables";
+.gallery {
+  border: 1px solid red;
+  &__item {
+    background-size: cover;
+    height: 270px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    @for $i from 1 through 7 {
+      &:nth-child(#{$i}) {
+        background-image: url(./images/#{$i}.jpg);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $screen-lg) {
+  .gallery {
+    &__item {
+      height: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: $screen-sm) {
+  .gallery {
+    &__item {
+      height: 150px;
+    }
+  }
+}

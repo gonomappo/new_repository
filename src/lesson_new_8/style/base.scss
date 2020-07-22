@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: $color-font-base;
+}
+
+body {
+  min-height: 100vh;
+  height: 100%;
+  background-color: $page-bg-color;
+}
+
+body,
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+button,
+input,
+textarea {
+  font-size: 1rem;
+  outline: none;
+}
+.page-conteiner {
+  max-width: $container-max-width;
+  width: 100%;
+  padding: 0 $spacing * 2;
+}
+.page-section {
+  display: flex;
+  justify-content: center;
+}

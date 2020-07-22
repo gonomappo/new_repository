@@ -1,0 +1,28 @@
+.grid-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+[class*="item-"] {
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+$contain: 6;
+$item-size: 100% / 6;
+
+@for $i from 1 to $contain {
+  .item-#{$i} {
+    width: $item-size * $i;
+  }
+}
+
+@media screen and (max-width: 768 - 1px) {
+  @for $i from 1 through $contain {
+    .item-sm-#{$i} {
+      width: $item-size * $i;
+    }
+  }
+}
