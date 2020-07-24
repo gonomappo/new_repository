@@ -1,0 +1,208 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype"); }
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: "liga"; }
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 {
+  font-size: 18px; }
+
+.material-icons.md-24 {
+  font-size: 24px; }
+
+.material-icons.md-36 {
+  font-size: 36px; }
+
+.material-icons.md-48 {
+  font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54); }
+
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light {
+  color: white; }
+
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3); }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #33333a; }
+
+body {
+  min-height: 100vh;
+  height: 100%;
+  background-color: #fff; }
+
+body,
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+ul,
+ol {
+  list-style: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700; }
+
+button,
+input,
+textarea {
+  font-size: 1rem;
+  outline: none; }
+
+.page-conteiner {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 16px; }
+
+.page-section {
+  display: flex;
+  justify-content: center; }
+
+.catalog-section {
+  background-color: #fff; }
+
+.catalog {
+  display: flex; }
+  .catalog__filters {
+    width: 260px;
+    flex-grow: 0; }
+  .catalog__list {
+    flex-grow: 1; }
+
+.filters {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch; }
+  .filters__header {
+    border-bottom: 2px solid #f3f3f3;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px; }
+  .filters__title {
+    padding: 14px 0;
+    text-transform: uppercase; }
+  .filters__reset-control {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+    padding: 14px 0;
+    color: #ff6008;
+    text-transform: uppercase; }
+
+.accordion__menu {
+  padding-left: 8px;
+  height: 0;
+  visibility: hidden; }
+  .accordion__menu_open {
+    visibility: visible;
+    height: auto; }
+
+.accordion__sub-menu {
+  padding-left: 42px; }
+
+.accordion__title {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  width: 100%;
+  text-align: left;
+  padding: 8px 0;
+  cursor: pointer; }
+  .accordion__title:hover {
+    color: #ff6008; }
+  .accordion__title:focus {
+    color: #ff6008; }
+  .accordion__title:active {
+    color: #ff6008; }
+  .accordion__title_lg {
+    font-size: 24px;
+    padding: 8px 0;
+    margin: 8px 0; }
+    .accordion__title_lg:after {
+      position: absolute;
+      font-size: 15px;
+      top: 50%;
+      transform: translateY(-59%) rotate(90deg);
+      right: 0; }
+  .accordion__title_icon-left {
+    padding-left: 15px; }
+    .accordion__title_icon-left::before {
+      position: absolute;
+      font-size: 15px;
+      top: 50%;
+      transform: translateY(-59%) rotate(90deg);
+      left: 0; }
+
+.accordion__icon {
+  position: absolute;
+  font-size: 15px;
+  top: 50%;
+  transform: translateY(-59%) rotate(90deg);
+  right: 0; }
+
+
+/*# sourceMappingURL=lesson_new_8.css.map*/
